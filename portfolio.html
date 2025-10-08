@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zunaira — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{
+      --accent: #f7d9e0; /* soft pastel pink */
+      --accent-2: #e8f4ff; /* soft pastel blue */
+      --muted: #6c757d;
+      --card-radius: 1rem;
+    }
+    body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#222}
+    /* Hero */
+    .hero{
+      background: linear-gradient(135deg,var(--accent) 0%, #fff 55%);
+      padding: 6rem 0;
+      border-bottom-left-radius: 3rem;
+      border-bottom-right-radius: 3rem;
+    }
+    .profile-img{width:150px;height:150px;object-fit:cover;border-radius:50%;box-shadow:0 8px 30px rgba(0,0,0,0.12);border:6px solid #fff}
+    .skills-badge{border-radius: .75rem;background: #fff;padding:.35rem .6rem;box-shadow:0 6px 18px rgba(0,0,0,.06);}
+    .section-title{font-weight:700}
+    .project-card{border-radius:var(--card-radius);box-shadow:0 8px 30px rgba(15,23,42,0.06)}
+    footer{padding:2.5rem 0;background:#f8f9fa;margin-top:4rem}
+    /* courses tabs */
+    .nav-pills .nav-link{border-radius: .75rem}
+    /* responsive tweaks */
+    @media (max-width:767px){
+      .hero{padding:3.5rem 0}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Zunaira</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="display-6 fw-bold">Hi — I'm <span class="text-primary">Zunaira</span></h1>
+          <p class="lead text-muted">Programmer • Web Engineer • Digital Marketer • Data Analyst</p>
+          <p class="mb-4">I build practical, maintainable web systems and user-centred designs. Experienced with university projects and three major web engineering applications. I also deliver marketing strategies that convert and data pipelines that inform decisions.</p>
+          <div class="d-flex gap-2">
+            <a href="#projects" class="btn btn-primary btn-lg">View Projects</a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+          </div>
+        </div>
+        <div class="col-md-5 text-center mt-4 mt-md-0">
+          <img src="https://via.placeholder.com/300" alt="Profile" class="profile-img">
+          <div class="mt-3 d-flex justify-content-center gap-2">
+            <div class="skills-badge">HTML</div>
+            <div class="skills-badge">CSS</div>
+            <div class="skills-badge">JavaScript</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mt-5">
+    <!-- ABOUT -->
+    <section id="about" class="mb-5">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-8">
+          <h2 class="section-title">About me</h2>
+          <p class="text-muted">I am a computer science student and programmer with hands-on experience building web applications using HTML, CSS, JavaScript and Bootstrap. I know C, C++, Java and Python — which I use for algorithms, backend services, and data analysis. I have created numerous university projects and led three main web engineering projects from design to deployment.</p>
+          <ul class="list-unstyled">
+            <li><strong>Education:</strong> Computer Science — University (ongoing)</li>
+            <li><strong>Main focus:</strong> Frontend &amp; Fullstack web development, UX, data analytics, and digital marketing.</li>
+            <li><strong>Languages:</strong> HTML, CSS, JavaScript, C, C++, Java, Python</li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <div class="card p-3 project-card">
+            <div class="card-body">
+              <h5 class="card-title">Quick stats</h5>
+              <p class="card-text mb-1"><strong>University projects:</strong> many (replace with exact number)</p>
+              <p class="card-text mb-1"><strong>Main web projects:</strong> 3</p>
+              <p class="card-text"><strong>Freelance:</strong> Digital marketing &amp; data analytics</p>
+              <a href="#contact" class="btn btn-sm btn-outline-primary mt-2">Hire / Collaborate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="section-title">Selected Projects</h2>
+        <small class="text-muted">3 highlighted web engineering projects + university projects</small>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Project Card 1 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="/images/infinity.PNG" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Infinity Salon</h5>
+              <p class="card-text">Responsive salon website with booking features and elegant UI.</p>
+            </div>
+            <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+              <small class="text-muted">Tech: HTML, CSS, JS</small>
+              <a href="https://zunairatariq24.github.io/Infinity-salon/" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="/images/bakery.PNG" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Zainab Cakes &amp; Cupcakes</h5>
+              <p class="card-text">Premium bakery website with pastel theme, multi-page structure and elegant design.</p>
+            </div>
+            <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+              <small class="text-muted">Tech: HTML, CSS, JS, Bootstrap</small>
+              <a href="https://zunairatariq24.github.io/Zainab_cakes_and_cupcakes/" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="col">
+          <div class="card h-100 project-card">
+            <img src="images/movie.PNG" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">InternIntelligence Movie</h5>
+              <p class="card-text">Movie-themed web project showcasing creative layouts and dynamic components.</p>
+            </div>
+            <div class="card-footer bg-white d-flex justify-content-between align-items-center">
+              <small class="text-muted">Tech: HTML, CSS, JS</small>
+              <a href="https://zunairatariq24.github.io/-InternIntelligence_movie/" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder for university projects -->
+        <div class="col">
+          <div class="card h-100 project-card p-3 d-flex flex-column justify-content-center text-center">
+            <div class="card-body">
+              <h5 class="card-title">University Projects</h5>
+              <p class="card-text text-muted">Replace this card with a gallery/list of your university assignments and smaller projects (algorithms, data structures, HCI, mobile apps).</p>
+            </div>
+            <div class="card-footer bg-white">
+              <a href="https://github.com/ZunairaTariq24" target="_blank" class="btn btn-sm btn-outline-dark">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="mb-5">
+      <h2 class="section-title mb-3">Courses &amp; Certifications</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h6>Core Computer Science</h6>
+          <ul>
+            <li>Algorithms &amp; Data Structures</li>
+            <li>Operating Systems</li>
+            <li>Database Systems</li>
+            <li>Software Engineering</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Web &amp; HCI</h6>
+          <ul>
+            <li>Web Engineering (major projects)</li>
+            <li>Human-Computer Interaction</li>
+            <li>Frontend Development (HTML, CSS, JS)</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Analytics &amp; Marketing</h6>
+          <ul>
+            <li>Data Analytics (Python, pandas)</li>
+            <li>Digital Marketing &amp; SEO</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-4">
+        <h6>Certifications</h6>
+        <ul>
+          <li><a href="https://coursera.org/share/10adc4f3f4e119c1292d1299b7ae7316" target="_blank">Meta Full-Stack Web Development (Coursera)</a></li>
+          <li><a href="https://coursera.org/share/ac5014b1763a6129f5d594063f8442ac" target="_blank">Google Data Analytics (Coursera)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mb-5">
+      <h2 class="section-title mb-3">Skills</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <h6>Programming & Tools</h6>
+          <div class="mb-2">HTML • CSS • JavaScript • Bootstrap • Git • Firebase • React (familiar)</div>
+          <div class="mb-2">C • C++ • Java • Python</div>
+        </div>
+        <div class="col-md-6">
+          <h6>Marketing & Analytics</h6>
+          <div class="mb-2">SEO • Content Strategy • Social Media Ads • Campaign Measurement</div>
+          <div class="mb-2">Data Analysis (pandas, basic ETL), Reporting, A/B testing</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="mb-5">
+      <h2 class="section-title mb-3">Get in touch</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Short message"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="card p-3 project-card">
+            <div class="card-body">
+              <h5 class="card-title">Contact details</h5>
+              <p class="card-text">Email: <a href="mailto:zunairatariq985@gmail.com">zunairatariq985@gmail.com</a></p>
+              <p class="card-text">Location: Rawalpindi, Pakistan</p>
+              <p class="card-text">Available for freelance, internships, and collaborations.</p>
+              <a href="https://github.com/ZunairaTariq24" target="_blank" class="btn btn-outline-primary">GitHub Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">© <span id="year"></span> Zunaira — Programmer &amp; Data Analyst</p>
+      <small class="text-muted">Built with HTML, CSS, JavaScript &amp; Bootstrap. Replace placeholders with your real content and links to GitHub / deployed apps.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value || 'Friend';
+      alert('Thanks, ' + name + '! Your message was sent (placeholder behaviour). Replace with a real mail endpoint or Firebase function.');
+      this.reset();
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
